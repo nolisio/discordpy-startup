@@ -11,7 +11,7 @@ async def on_command_error(ctx, error):
     await ctx.send(str(error))  
     
 @bot.command()
-async def 調子はどう？(ctx):
+async def "調子はどう？"(ctx):
     await ctx.send('可もなく不可もなくといった平常運転です')
     
 bot.run(token)
