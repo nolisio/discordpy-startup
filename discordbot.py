@@ -14,11 +14,6 @@ async def on_command_error(ctx, error):
 @bot.command()
 async def おはよう(ctx):
     await ctx.send('おはようございます')
-
-async def こんにちは(ctx):
-    await ctx.send('こんにちは')
-
-async def 調子はどう？(ctx):
-    await ctx.send('可もなく不可もなくといったところです')    
+   
     
 bot.run(token)
