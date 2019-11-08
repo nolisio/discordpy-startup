@@ -21,6 +21,6 @@ async def こんにちは(ctx):
 
 @bot.command()
 async def 調子はどう？(ctx):
-    await ctx.send('可もなく不可もなくといったところです。')    
+    await ctx.send('可もなく不可もなくといったところです')    
     
 bot.run(token)
