@@ -8,16 +8,7 @@ token = os.environ['DISCORD_BOT_TOKEN']
 
 @bot.event
 async def on_command_error(ctx, error):
-    await ctx.send(str(error))
-
-
-@bot.command()
-async def おはよう(ctx):
-    await ctx.send('おはようございます')
-   
-@bot.command()
-async def こんにちは(ctx):
-    await ctx.send('こんにちは')    
+    await ctx.send(str(error))  
     
 @bot.command()
 async def 調子はどう？(ctx):
