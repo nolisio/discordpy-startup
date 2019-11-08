@@ -3,7 +3,7 @@ from discord.ext import commands
 import os
 import traceback
 
-bot = commands.Bot(command_prefix='めいどちゃん、')
+bot = commands.Bot(command_prefix='meidochan.')
 token = os.environ['DISCORD_BOT_TOKEN']
 
 
@@ -16,12 +16,3 @@ async def on_command_error(ctx, error):
 async def おはよう(ctx):
     await ctx.send('おはようございます')
 
-@bot.command()
-async def 調子はどう？(ctx):
-    await ctx.send('可もなく不可もなくといった感じですね')
-
-@bot.command()
-async def 好き(ctx):
-    await ctx.send('変なこと言わないでくださいよ、もう')
-
-bot.run(token)
